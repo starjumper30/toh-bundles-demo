@@ -152,7 +152,7 @@
     "ui-widgets": {
       "projectType": "library",
       "root": "projects/ui-widgets",
-      "sourceRoot": "projects/ui-widgets/src",
+      "sourceRoot": "projects/ui-widgets",
       "prefix": "lib",
       "architect": {
         "build": {
@@ -170,7 +170,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ui-widgets/src/test.ts",
+            "main": "projects/ui-widgets/test.ts",
             "tsConfig": "projects/ui-widgets/tsconfig.spec.json",
             "karmaConfig": "projects/ui-widgets/karma.conf.js"
           }

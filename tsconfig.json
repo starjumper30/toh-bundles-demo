@@ -20,8 +20,10 @@
     ],
     "paths": {
       "ui-widgets": [
-        "dist/ui-widgets/ui-widgets",
         "dist/ui-widgets"
+      ],
+      "ui-widgets/*": [
+        "dist/ui-widgets/*"
       ]
     }
   },
