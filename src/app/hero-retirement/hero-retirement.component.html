@@ -1,0 +1,4 @@
+<div>
+  <h2>{{(hero | async)?.name | uppercase}} Retirement Outlook</h2>
+  <lib-retirement-forecaster [startDate]="startDate |async"></lib-retirement-forecaster>
+</div>

@@ -14,8 +14,10 @@ export class RetirementForecasterComponent {
 
   @Input()
   set startDate(start: Date) {
-    this._startDate = start;
-    this.retirementDate = moment(start).add(20, 'years').toDate();
+    if (start) {
+      this._startDate = start;
+      this.retirementDate = moment(start).add(22, 'years').toDate();
+    }
   }
 
   get startDate() {
