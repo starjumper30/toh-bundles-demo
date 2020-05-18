@@ -3,7 +3,7 @@ import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { DetailsModule, RetirementModule } from 'ui-widgets';
+import { DetailsModule } from 'ui-widgets';
 
 import { InMemoryDataService }  from './in-memory-data.service';
 import { AppRoutingModule }     from './app-routing.module';
@@ -13,7 +13,6 @@ import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
 import { HeroesComponent }      from './heroes/heroes.component';
 import { HeroSearchComponent }  from './hero-search/hero-search.component';
 import { MessagesComponent }    from './messages/messages.component';
-import { HeroRetirementComponent } from './hero-retirement/hero-retirement.component';
 
 @NgModule({
   imports: [
@@ -29,8 +28,7 @@ import { HeroRetirementComponent } from './hero-retirement/hero-retirement.compo
       InMemoryDataService, {dataEncapsulation: false}
     ),
 
-    DetailsModule,
-    RetirementModule
+    DetailsModule
   ],
   declarations: [
     AppComponent,
@@ -38,8 +36,7 @@ import { HeroRetirementComponent } from './hero-retirement/hero-retirement.compo
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    HeroSearchComponent,
-    HeroRetirementComponent
+    HeroSearchComponent
   ],
   bootstrap: [ AppComponent ]
 })
