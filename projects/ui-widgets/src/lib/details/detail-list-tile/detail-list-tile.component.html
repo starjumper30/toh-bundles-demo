@@ -1,0 +1,5 @@
+<a routerLink="/detail/{{item.id}}">
+  <span class="badge">{{item.id}}</span> {{item.name}}
+</a>
+<button class="delete" title="delete"
+        (click)="delete.emit(item)">x</button>

@@ -53,6 +53,10 @@ export class HeroService {
     );
   }
 
+  search(term: string) {
+    return this.searchHeroes(term);
+  }
+
   /* GET heroes whose name contains search term */
   searchHeroes(term: string): Observable<Hero[]> {
     if (!term.trim()) {
